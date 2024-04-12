@@ -11,5 +11,5 @@ inputs:
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:jorpac2
-experiment_name:  diabetes-classification-experiment-jorge
+experiment_name:  diabetes-classification-experiment-jorge3
 description: Train a classification model to predict diabetes
