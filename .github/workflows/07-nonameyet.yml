@@ -1,4 +1,4 @@
-name: Deploy Model
+name: Deploy Modelnow
  
 on:
   pull_request_target:
@@ -19,8 +19,6 @@ jobs:
     if: github.event.label.name == 'register-model'
     name: Register Model
     runs-on: ubuntu-latest
-    environment:
-      name: prod
     steps:
       - name: Check out repo
         uses: actions/checkout@main
@@ -36,8 +34,6 @@ jobs:
     name: Create Endpoint
     if: github.event.label.name == 'create-endpoint'
     runs-on: ubuntu-latest
-    environment:
-      name: prod
     steps:
       - name: Check out repo
         uses: actions/checkout@main
@@ -55,8 +51,6 @@ jobs:
     name: Deploy Model
     if: github.event.label.name == 'deploy-model'
     runs-on: ubuntu-latest
-    environment:
-      name: prod
     steps:
       - name: Check out repo
         uses: actions/checkout@main
