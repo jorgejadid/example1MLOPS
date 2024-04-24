@@ -17,7 +17,7 @@ permissions:
 jobs:
   register-model:
     if: github.event.label.name == 'register-model'
-    name: Register Model7
+    name: Register Model75
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
