@@ -1,6 +1,6 @@
 $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
 name: mlflow-deployment
 endpoint_name: mlflow-endpoint-unique # Name of the endpoint to deploy the model to
-model: jorge-model01:1
+model: azureml:jorge-model01:1
 instance_type: Standard_DS3_v2
 instance_count: 1
