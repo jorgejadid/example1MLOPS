@@ -17,7 +17,7 @@ permissions:
 jobs:
   register-model:
     if: github.event.label.name == 'register-model'
-    name: Register Model
+    name: Register Model7
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
@@ -28,7 +28,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{secrets.AZURE_CREDENTIALS}}
-      - name: Trigger Azure ML job
+      - name: Trigger Azure ML job7
         run: az ml model create --name ${{ env.model-name }} --path azureml://jobs/${{ env.job-name }}/outputs/artifacts/paths/model/ --type mlflow_model --workspace-name ${{ env.workspace-name }} --resource-group ${{ env.resource-group }}
   create-endpoint:
     name: Create Endpoint
