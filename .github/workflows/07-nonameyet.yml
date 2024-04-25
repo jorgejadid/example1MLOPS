@@ -46,7 +46,7 @@ jobs:
       - name: Trigger Azure ML job
         run: az ml online-endpoint create -f src/create-endpoint.yml --workspace-name ${{ env.workspace-name }} --resource-group ${{ env.resource-group }}
   deploy-model:
-    name: Deploy Model7A
+    name: Deploy Model7B
     if: github.event.label.name == 'deploy-model'
     runs-on: ubuntu-latest
     steps:
